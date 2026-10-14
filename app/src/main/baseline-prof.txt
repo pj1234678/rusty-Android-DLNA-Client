@@ -1,0 +1,22 @@
+# Hand-authored baseline profile: hot classes for install-time AOT.
+# AGP packages this as assets/dexopt/baseline.prof; the OS precompiles
+# these to native code at install, so cold start, first browse, and first
+# video skip JIT warm-up. Class-only lines include all methods of the class.
+# (Malformed/unknown lines are ignored silently — this file can't break builds.)
+Lcom/example/rustydlnaclient/MainActivity;
+Lcom/example/rustydlnaclient/MainActivity$CombinedAdapter;
+Lcom/example/rustydlnaclient/MainActivity$ItemViewHolder;
+Lcom/example/rustydlnaclient/MainActivity$ServerViewHolder;
+Lcom/example/rustydlnaclient/MainActivity$NoNetworkViewHolder;
+Lcom/example/rustydlnaclient/MainActivity$LoadingViewHolder;
+Lcom/example/rustydlnaclient/VideoPlayerActivity;
+Lcom/example/rustydlnaclient/PlayerHolder;
+Lcom/example/rustydlnaclient/VideoProgressManager;
+Lcom/example/rustydlnaclient/VideoProgressManager$VideoProgress;
+Lcom/example/rustydlnaclient/perf/BrowseXml;
+Lcom/example/rustydlnaclient/perf/PlaybackBenchmark;
+Lcom/example/rustydlnaclient/perf/PlayerConfigProfiles;
+Landroidx/media3/exoplayer/ExoPlayerImpl;
+Landroidx/media3/exoplayer/DefaultRenderersFactory;
+Landroidx/media3/exoplayer/DefaultLoadControl;
+Landroidx/media3/ui/PlayerView;
